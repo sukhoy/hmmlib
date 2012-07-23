@@ -346,6 +346,8 @@ namespace hmmlib {
       for(int chunk = 0; chunk < no_chunks; ++chunk)
 	F.get_chunk(i,chunk) *= scale;
     }
+
+    delete &T_t; // get rid of the memory leak, Vlad Sukhoy <sukhoy@iastate.edu>
   }
 	
   template <typename float_type, typename sse_float_type>
