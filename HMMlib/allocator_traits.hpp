@@ -45,7 +45,8 @@ namespace hmmlib {
       std::free(T.table);
     }
   };
-	
+
+#pragma GCC diagnostic ignored "-Wignored-attributes"
   template<>
   class AllocatorTraits<double, __m128d> {
     typedef double float_type;

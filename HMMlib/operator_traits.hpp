@@ -107,7 +107,8 @@ namespace hmmlib {
       return sum;
     }
   };
-	
+
+#pragma GCC diagnostic ignored "-Wignored-attributes"
   template<>
   class OperatorTraits<double, __m128d> {
     typedef double float_type;
